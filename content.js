@@ -20,7 +20,7 @@ function insertDataNextToUsername() {
 
 function addPriceToHome() {
     let currentPath = window.location.pathname.slice(1);
-    if (currentPath === "home" || currentPath === "") {
+    if (currentPath === "home" || currentPath === "" || window.location.pathname.includes('status')) {
         let userDivs = document.querySelectorAll('div[data-testid="User-Name"]');
         userDivs.forEach(userDiv => {
 
