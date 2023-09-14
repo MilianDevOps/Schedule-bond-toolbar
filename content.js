@@ -28,9 +28,11 @@ function addPriceToHome() {
             let usernameDivs = userDiv.querySelectorAll('.css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0');
             let usernameDiv = Array.from(usernameDivs).find(div => div.innerText.startsWith('@'));
             if (usernameDiv && !usernameDiv.hasAttribute('data-ft')) {
-                let username = (usernameDiv.innerText).substring(1);
-                console.log(username);
-                usernameDiv.setAttribute('data-ft', "FriendTech");
+                let username = usernameDiv.innerText
+                if(username != null)
+                {
+                    username = username.substring(1);
+                    usernameDiv.setAttribute('data-ft', "FriendTech");
                 chrome.runtime.sendMessage({action: "fetchData", url: `https://frentech.octav.fi/api/users/search?query=${username}`}, (data) => {
                     if (data && data[0] && data[0].displayPrice) {
                         if(data[0].twitterUsername == username)
@@ -42,6 +44,7 @@ function addPriceToHome() {
                         }
                     }
                 });
+                }
             }
             else
             {
