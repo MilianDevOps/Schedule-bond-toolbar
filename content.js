@@ -38,7 +38,7 @@ function addPriceToHome() {
                         if(data[0].twitterUsername == username)
                         {
                         let priceDiv = document.createElement('div');
-                        priceDiv.innerText = "🗝️" + (data[0].displayPrice / 10**18).toFixed(2) + "Ξ" + "📈" + ((data[0].displayPrice / 10**18) * data[0].shareSupply).toFixed(2) + "Ξ MCAP";
+                        priceDiv.innerText = "🗝️" + (data[0].displayPrice / 10**18).toFixed(2) + "Ξ  " + "📈" + ((data[0].displayPrice / 10**18) * data[0].shareSupply).toFixed(2) + "Ξ MCAP";
                         priceDiv.style.color = "#00bbfa";
                         userDiv.insertAdjacentElement('afterend', priceDiv);
                         }
