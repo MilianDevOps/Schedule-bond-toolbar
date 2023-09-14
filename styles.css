@@ -1,0 +1,33 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.popup {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup h1 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+}
+
+.popup p {
+    margin: 0 0 10px;
+}
+
+.popup a {
+    color: #1da1f2;
+    text-decoration: none;
+}
+
+.popup a:hover {
+    text-decoration: underline;
+}
+
+/* Add any styles you want to apply to your inserted data or other elements */
