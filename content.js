@@ -32,7 +32,7 @@ function addPriceToHome() {
                 chrome.runtime.sendMessage({action: "fetchData", url: `https://frentech.octav.fi/api/users/search?query=${username}`}, (data) => {
                     if (data && data[0] && data[0].displayPrice) {
                         let priceDiv = document.createElement('div');
-                        priceDiv.innerText = "  " + (data[0].displayPrice / 10**18).toFixed(5) + "Ξ";
+                        priceDiv.innerText = "🔗" + (data[0].displayPrice / 10**18).toFixed(5) + "Ξ";
                         priceDiv.style.color = "#00bbfa";
                         userDiv.appendChild(priceDiv);
                     }
