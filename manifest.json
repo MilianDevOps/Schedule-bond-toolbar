@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Twitter Data Enhancer",
+    "name": "Schedule.Bond",
     "version": "1.0",
     "description": "Add additional data next to Twitter usernames",
     "permissions": ["activeTab", "storage"],
