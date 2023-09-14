@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Schedule.Bond",
     "version": "1.0",
-    "description": "Add additional data next to Twitter usernames",
+    "description": "Overlay for twitter to show friend.tech information",
     "permissions": ["activeTab", "storage"],
 "host_permissions": [
     "https://frentech.octav.fi/*"
