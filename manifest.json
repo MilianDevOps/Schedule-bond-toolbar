@@ -3,7 +3,7 @@
     "name": "Schedule.Bond",
     "version": "1.0",
     "description": "Overlay for twitter to show friend.tech information",
-    "permissions": ["activeTab", "storage"],
+    "permissions": ["storage"],
 "host_permissions": [
     "https://frentech.octav.fi/*"
 ],
